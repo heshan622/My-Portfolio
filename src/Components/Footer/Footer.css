@@ -1,5 +1,5 @@
 .footer {
-    margin: 80px 170px 0px; 
+    margin: 80px 170px 50px; 
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -105,7 +105,7 @@
     background-color: var(--border-color);
 }
 
-
+/* --- UPDATED RESPONSIVE STYLES --- */
 @media (max-width: 768px) {
     .footer {
         margin: 50px 30px;
@@ -113,27 +113,25 @@
     .footer-top {
         flex-direction: column;
         gap: 50px;
-        text-align: center;
     }
 
-    
+    /* This is the key fix for the subscribe form */
     .footer-top-right {
         flex-direction: column;
         width: 100%;
     }
-
     .footer-email-input {
         width: 100%;
-        box-sizing: border-box;
+        box-sizing: border-box; /* Ensures padding doesn't affect width */
     }
-    .footer-email-input input{
+    .footer-email-input input {
         width: 100%;
     }
-
     .footer-subscribe {
         width: 100%;
         padding: 20px;
     }
+    /* End of form fix */
     
     .footer-bottom {
         flex-direction: column-reverse;
