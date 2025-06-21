@@ -1,0 +1,42 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  color: var(--text-color);
+  background: var(--background-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+:root {
+  --gradient-start: #DA7C25;
+  --gradient-end: #B923E1;
+}
+
+
+.dark {
+  --background-color: #161513;
+  --text-color: #d8d8d8;
+  --title-color: #ffffff;
+  --card-bg: #262626;
+  --input-bg: #323232;
+  --border-color: #4c4c4c;
+  --icon-filter: brightness(0) invert(1); 
+}
+
+
+.light {
+  --background-color: #f4f4f4; 
+  --text-color: #333333;
+  --title-color: #000000;
+  --card-bg: #ffffff;
+  --input-bg: #e9ecef;
+  --border-color: #dddddd;
+  --icon-filter: brightness(0) invert(0); 
+}
