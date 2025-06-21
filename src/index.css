@@ -1,4 +1,4 @@
-
+/* --- index.css --- */
 * {
     margin: 0;
     padding: 0;
@@ -13,13 +13,13 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-
+/* --- Color Variables Definition --- */
 :root {
   --gradient-start: #DA7C25;
   --gradient-end: #B923E1;
 }
 
-
+/* Dark Mode Theme */
 .dark {
   --background-color: #161513;
   --text-color: #d8d8d8;
@@ -30,7 +30,7 @@ body {
   --icon-filter: brightness(0) invert(1); 
 }
 
-
+/* Light Mode Theme */
 .light {
   --background-color: #f4f4f4; 
   --text-color: #333333;
