@@ -19,7 +19,7 @@ import project6_vid from '../../assets/project6_demo.mp4';
 
 // --- Your project data array ---
 const mywork_data = [
-    { w_no: "01", w_name: "Hotel Booking Site", w_desc: "Full-stack hotel booking app using MERN stack. Includes room listings, bookings, login & admin panel. (Ongoing Project)", w_tech: "React, Express.js, MongoDB, Node.js", w_img: project1_img, w_video: null, w_url: "https://hotel-booking-site-frond-end.vercel.app/" },
+    { w_no: "01", w_name: "Hotel Booking Site", w_desc: "Full-stack hotel booking app using MERN stack. Includes room listings, bookings, login & admin panel. (Ongoing Project)", w_tech: "React, Express.js, MongoDB, Node.js", w_img: project1_img, w_video: null, w_url: "https://hotel-booking-site-front-end.vercel.app/" },
     { w_no: "02", w_name: "Personal Portfolio", w_desc: "Frontend web app built with React and custom CSS. Focused on responsive design and interactive UI.", w_tech: "React, CSS", w_img: project2_img, w_video: null, w_url: "https://github.com/heshan622/My-Portfolio" },
     { w_no: "03", w_name: "Coffee Shop Website", w_desc: "Responsive coffee shop website built with HTML, CSS, and JavaScript. Elegant design with smooth navigation.", w_tech: "HTML, CSS, JavaScript", w_img: project3_img, w_video: null, w_url: "https://heshan622.github.io/Coffee-Shop-Site/" },
     { w_no: "04", w_name: "Airline Ticket Reservation System", w_desc: "Desktop app for airline ticket booking built with Java Swing and MySQL.", w_tech: "Java, Java Swing, MySQL", w_img: project4_img, w_video: null, w_url: "https://github.com/heshan622/Airline-Ticket-Booking-System" },
