@@ -13,7 +13,6 @@ const Contact = () => {
         event.preventDefault();
         const formData = new FormData(event.target);
     
-        
         formData.append("access_key", "c6cad3d7-c415-447b-89f3-5b2a168a9e4c"); 
     
         const object = Object.fromEntries(formData);
@@ -45,8 +44,7 @@ const Contact = () => {
       <div className="contact-section">
         <div className="contact-left">
             <h1>Let's talk</h1>
-            <p>I’m currently open to professional opportunities, freelance work, and meaningful collaborations. If you're looking for a developer with a strong technical foundation, attention to detail, and a passion for delivering high-quality solutions, feel free to reach out I’d be glad to discuss how I can contribute to your next project and create something impactful together.
-            </p>           
+            <p>I’m currently open to professional opportunities, freelance work, and meaningful collaborations. If you're looking for a developer with a strong technical foundation, attention to detail, and a passion for delivering high-quality solutions, feel free to reach out I’d be glad to discuss how I can contribute to your next project and create something impactful together.</p>
             <div className="contact-details">
                 <div className="contact-detail">
                     <img src={mail_icon} alt="" /> <p>p.heshan622@gmail.com</p>
@@ -72,12 +70,16 @@ const Contact = () => {
             </div>
         </div>
         <form onSubmit={onSubmit} className="contact-right">
+            {/* The 'htmlFor' now matches the 'id' of the input */}
             <label htmlFor="name">Your Name</label>
-            <input type="text" placeholder='Enter your name' name='name' required/>
+            <input type="text" placeholder='Enter your name' name='name' id='name' required/>
+            
             <label htmlFor="email">Your Email</label>
-            <input type="email" placeholder='Enter your email' name='email' required/>
+            <input type="email" placeholder='Enter your email' name='email' id='email' required/>
+
             <label htmlFor="message">Write your message here</label>
-            <textarea name="message" rows="8" placeholder='Enter your message' required></textarea>
+            <textarea name="message" rows="8" placeholder='Enter your message' id='message' required></textarea>
+            
             <button type='submit' className="contact-submit">Submit now</button>
         </form>
       </div>

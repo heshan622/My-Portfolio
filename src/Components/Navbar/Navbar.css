@@ -70,25 +70,19 @@
     filter: var(--icon-filter); 
 }
 
-/* These are hidden by default and only appear on the correct screen sizes */
+/* These are hidden on desktop by default */
 .nav-mob-open, .nav-mob-close, .nav-theme-toggle-mobile { 
     display: none; 
 }
 
 
-/* --- TABLET RESPONSIVE STYLES (1024px and below) --- */
-@media(max-width: 1024px) {
-    .navbar { margin: 20px 50px; }
-    .nav-menu { gap: 40px; font-size: 18px; }
-    .nav-connect { padding: 12px 35px; font-size: 20px; }
-}
-
-
-/* --- MOBILE RESPONSIVE STYLES (768px and below) --- */
+/* --- MOBILE RESPONSIVE STYLES --- */
 @media(max-width: 768px) {
-    /* Hide the desktop menu and right-side buttons */
+    .navbar { 
+        margin: 20px 30px; 
+    }
     .nav-right, .nav-menu { 
-        display: none; 
+        display: none; /* Hide desktop elements */
     }
 
     /* This is the key fix: position:fixed has been removed */
@@ -99,23 +93,22 @@
         cursor: pointer;
     }
     
-    /* The slide-out menu itself IS fixed, so it covers the screen */
     .nav-menu {
         display: flex;
-        position: fixed; 
-        flex-direction: column; 
-        align-items: flex-start; 
-        top: 0; 
-        gap: 30px; 
-        background: var(--card-bg); 
-        width: 300px; 
-        height: 100%; 
-        z-index: 101; 
-        transition: right 0.5s; 
+        position: fixed; /* The slide-out menu itself IS fixed */
+        flex-direction: column;
+        align-items: flex-start;
+        top: 0;
+        gap: 30px;
+        background: var(--card-bg);
+        width: 300px;
+        height: 100%;
+        z-index: 101;
+        transition: right 0.5s;
         right: -350px; /* Hidden off-screen */
-        padding-top: 50px; 
-        padding-left: 30px; 
-        border-left: 1px solid var(--border-color); 
+        padding-top: 50px;
+        padding-left: 30px;
+        border-left: 1px solid var(--border-color);
     }
     .nav-mob-close { 
         display: block; 
@@ -128,7 +121,6 @@
     }
     .nav-menu li { font-size: 22px; }
 
-    /* Styles for the theme toggle inside the mobile menu */
     .nav-theme-toggle-mobile {
         display: flex;
         align-items: center;
