@@ -1,24 +1,55 @@
-.portfolio { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 80px; margin: 80px 170px; margin-top: 160px; }
+.portfolio { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 80px; margin: 80px 170px; }
 .portfolio-title { position: relative; text-align: center;}
 .portfolio-title h1 { padding: 0px 30px; font-size: 70px; font-weight: 600; color: var(--title-color); }
 .portfolio-title img { position: absolute; bottom: 0; right: 0; z-index: -1; }
 .portfolio-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px; width: 100%; }
-.portfolio-format { position: relative; border-radius: 10px; border: 2px solid var(--border-color); overflow: hidden; cursor: pointer; transition: transform 0.3s ease-out, border-color 0.3s ease-out; }
+
+/* The project card itself is now the link */
+.portfolio-format { 
+    position: relative; 
+    border-radius: 10px; 
+    border: 2px solid var(--border-color); 
+    overflow: hidden; 
+    cursor: pointer; 
+    transition: transform 0.3s ease-out, border-color 0.3s ease-out; 
+    text-decoration: none; /* Removes underline from the link */
+}
+
 .portfolio-media { width: 100%; height: 100%; object-fit: cover; display: block; transition: filter 0.4s ease; }
 .portfolio-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; box-sizing: border-box; opacity: 0; visibility: hidden; transition: opacity 0.4s ease, visibility 0.4s ease, background-color 0.4s ease; }
 .portfolio-overlay h3 { font-size: 24px; font-weight: 700; margin-bottom: 10px; }
 .portfolio-desc { font-size: 16px; line-height: 1.5; margin-bottom: 20px; max-width: 90%; }
 .portfolio-tech-title { font-size: 18px; font-weight: 600; color: var(--gradient-start); margin-bottom: 8px; }
 .portfolio-tech { font-size: 15px; font-weight: 500; }
-.portfolio-format:hover { transform: scale(1.05); border-color: var(--gradient-start); }
-.portfolio-format:not(.has-video):hover .portfolio-overlay { opacity: 1; visibility: visible; }
-.portfolio-format:not(.has-video):hover .portfolio-media { filter: blur(5px); }
-.portfolio-format.has-video:hover .portfolio-overlay { background: rgba(0, 0, 0, 0.6); opacity: 1; visibility: visible; }
-.portfolio-container a { text-decoration: none; }
 
+/* --- HOVER INTERACTION STYLES --- */
+.portfolio-format:hover {
+    transform: scale(1.02);
+    border-color: var(--gradient-start);
+}
+.portfolio-format:hover .portfolio-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+.portfolio-format:not(.has-video):hover .portfolio-media {
+    filter: blur(5px);
+}
+.portfolio-format.has-video:hover .portfolio-overlay {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* --- RESPONSIVE STYLES --- */
 @media(max-width: 768px){
     .portfolio { margin: 50px 30px; gap: 60px; }
     .portfolio-title h1 { font-size: 50px; padding: 0; }
     .portfolio-title img { width: 130px; right: -20px; }
     .portfolio-container { grid-template-columns: 1fr; gap: 30px; }
+    .portfolio-format:hover { transform: scale(1); } /* Disable scale on mobile for better usability */
+
+    /* Fix for mobile text sizes */
+    .portfolio-overlay { padding: 15px; }
+    .portfolio-overlay h3 { font-size: 18px; margin-bottom: 5px;}
+    .portfolio-desc { font-size: 14px; line-height: 1.4; margin-bottom: 10px; }
+    .portfolio-tech-title { font-size: 15px; margin-bottom: 5px;}
+    .portfolio-tech { font-size: 13px; }
 }
