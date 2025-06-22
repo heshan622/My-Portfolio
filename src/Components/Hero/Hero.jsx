@@ -11,7 +11,7 @@ const Hero = () => {
             {/* This now scrolls to the contact section */}
             <a href='#contact' className="hero-connect">Connect with me</a>
             {/* This is the downloadable resume link */}
-            <a href="/Heshan_Pasindu_CV.pdf" download="Heshan_Pasindu_CV.pdf" className="hero-resume">My resume</a>
+            <a href="/Pasindu_Heshan_CV.pdf" download="Pasindu_Heshan_CV.pdf" className="hero-resume">My resume</a>
         </div>
     </div>
   )
