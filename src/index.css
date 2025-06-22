@@ -19,7 +19,7 @@ body {
   --gradient-end: #B923E1;
 }
 
-/* Dark Mode Theme */
+/* Dark Mode Theme (Default) */
 .dark {
   --background-color: #161513;
   --text-color: #d8d8d8;
