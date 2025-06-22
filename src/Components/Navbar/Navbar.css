@@ -78,17 +78,17 @@
 
 /* --- MOBILE RESPONSIVE STYLES --- */
 @media(max-width: 768px) {
-    .navbar { margin: 20px 30px; }
-    .nav-connect, .nav-theme-toggle { display: none; } /* Hide desktop buttons */
+    .navbar { 
+        margin: 20px 30px; 
+    }
+    .nav-right, .nav-menu { 
+        display: none; /* Hide desktop elements */
+    }
 
     .nav-mob-open { 
         display: block; 
-        position: fixed; 
-        right: 30px; 
-        top: 25px; 
         width: 30px; 
         filter: var(--icon-filter); 
-        z-index: 100; 
         cursor: pointer;
     }
     
