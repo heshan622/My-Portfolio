@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import './Navbar.css';
 import theme_pattern from '../../assets/theme_pattern.svg';
 import sun_icon from '../../assets/sun.svg';
@@ -17,7 +17,6 @@ const Navbar = ({ theme, toggleTheme }) => {
   }
 
   const handleMenuClick = (e) => {
-    // If the window is mobile-sized, close the menu on link click
     if (window.innerWidth <= 768) {
       closeMenu();
     }
