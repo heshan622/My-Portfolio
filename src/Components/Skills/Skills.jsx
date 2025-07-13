@@ -9,6 +9,7 @@ import j_icon from '../../assets/j_icon.svg';
 import mysql_icon from '../../assets/mysql_icon.svg';
 import tailwind_icon from '../../assets/tailwind_icon.svg';
 import selenium_icon from '../../assets/selenium_icon.svg';
+import python_icon from '../../assets/python_icon.svg';
 
 const skills_data = [
     { s_no: "01", s_name: "React.js", s_icon: react_icon },
@@ -16,9 +17,10 @@ const skills_data = [
     { s_no: "03", s_name: "CSS", s_icon: css_icon },
     { s_no: "04", s_name: "JavaScript", s_icon: js_icon },
     { s_no: "05", s_name: "Java", s_icon: j_icon },
-    { s_no: "06", s_name: "MySQL", s_icon: mysql_icon },
-    { s_no: "07", s_name: "Tailwind CSS", s_icon: tailwind_icon },
-    { s_no: "08", s_name: "Selenium", s_icon: selenium_icon },
+    { s_no: "06", s_name: "Python", s_icon: python_icon },
+    { s_no: "07", s_name: "MySQL", s_icon: mysql_icon },
+    { s_no: "08", s_name: "Tailwind CSS", s_icon: tailwind_icon },
+    { s_no: "09", s_name: "Selenium", s_icon: selenium_icon },
     
 ];
 
