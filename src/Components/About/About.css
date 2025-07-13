@@ -5,7 +5,6 @@
     justify-content: center; 
     gap: 80px; 
     margin: 80px 170px; 
-    margin-top: 160px;
 }
 .about-title { 
     position: relative; 
@@ -25,6 +24,7 @@
 .about-sections{ 
     display: flex; 
     gap: 80px; 
+    align-items: center; /* This is important to vertically align the text and photo */
 }
 .about-left img { 
     border-radius: 15px; 
@@ -45,6 +45,25 @@
 }
 
 
+/* --- NEW TABLET STYLES (The Fix) --- */
+@media (max-width: 1024px) {
+    .about { 
+        margin: 80px 50px; 
+    }
+    .about-sections { 
+        gap: 60px; 
+    }
+    .about-left img { 
+        width: 300px; 
+    }
+    /* This reduces the font size on tablets to keep the height balanced with the image */
+    .about-para { 
+        font-size: 20px; 
+    }
+}
+
+
+/* --- MOBILE STYLES --- */
 @media (max-width: 768px) {
     .about { 
         gap: 60px; 
@@ -55,9 +74,14 @@
         font-size: 50px; 
         padding: 0; 
     }
+    .about-title img { 
+        width: 130px; 
+        right: -20px; 
+    }
     .about-sections { 
         flex-direction: column; 
     }
+    /* Your photo is hidden on small mobile screens */
     .about-left { 
         display: none; 
     }
