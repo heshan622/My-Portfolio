@@ -37,7 +37,7 @@ const Footer = () => {
                     <h1>Hesh.</h1>
                     <img src={theme_pattern} alt="decorative pattern" />
                 </div>
-                <p>I am a full-stack developer from Sri Lanka, with a passion for creating dynamic and user-friendly web applications.</p>
+                <p>I’m a front-end developer from Sri Lanka, passionate about building dynamic and user-friendly web interfaces.</p>
             </div>
             <form onSubmit={onSubscribe} className="footer-top-right">
                 <div className="footer-email-input">

@@ -12,22 +12,24 @@ import project6_img from '../../assets/project6_thumbnail.png';
 import project7_img from '../../assets/project7_thumbnail.png';
 import project8_img from '../../assets/project8_thumbnail.png';
 import project9_img from '../../assets/project9_thumbnail.png';
+import project10_img from '../../assets/project10_thumbnail.png';
 
-import project5_vid from '../../assets/project5_demo.mp4';
 import project6_vid from '../../assets/project6_demo.mp4';
+import project7_vid from '../../assets/project7_demo.mp4';
 
 
 // --- Your project data array ---
 const mywork_data = [
-    { w_no: "01", w_name: "Hotel Booking Site", w_desc: "Full-stack hotel booking app using MERN stack. Includes room listings, bookings, login & admin panel. (Ongoing Project)", w_tech: "React, Express.js, MongoDB, Node.js", w_img: project1_img, w_video: null, w_url: "https://hotel-booking-site-front-end.vercel.app/" },
-    { w_no: "02", w_name: "Personal Portfolio", w_desc: "Frontend web app built with React and custom CSS. Focused on responsive design and interactive UI.", w_tech: "React, CSS", w_img: project2_img, w_video: null, w_url: "https://github.com/heshan622/My-Portfolio" },
-    { w_no: "03", w_name: "Coffee Shop Website", w_desc: "Responsive coffee shop website built with HTML, CSS, and JavaScript. Elegant design with smooth navigation.", w_tech: "HTML, CSS, JavaScript", w_img: project3_img, w_video: null, w_url: "https://heshan622.github.io/Coffee-Shop-Site/" },
-    { w_no: "04", w_name: "Airline Ticket Reservation System", w_desc: "Desktop app for airline ticket booking built with Java Swing and MySQL.", w_tech: "Java, Java Swing, MySQL", w_img: project4_img, w_video: null, w_url: "https://github.com/heshan622/Airline-Ticket-Booking-System" },
-    { w_no: "05", w_name: "Hotel Booking Automation", w_desc: "Automated hotel booking on PHPTRAVELS using Selenium WebDriver, TestNG, and Java.", w_tech: "Selenium, TestNG, Java, Maven", w_img: project5_img, w_video: project5_vid, w_url: "https://github.com/heshan622/HotelBooking_Selenium" },
-    { w_no: "06", w_name: "Mobile Purchase Automation", w_desc: "Automated mobile purchase workflow on eBay using Selenium WebDriver, TestNG, and Java.", w_tech: "Selenium, TestNG, Java, Maven", w_img: project6_img, w_video: project6_vid, w_url: "https://github.com/heshan622/MobilePurchaseTestNG" },
-    { w_no: "07", w_name: "Student Management System", w_desc: "Desktop app for managing student records built with Java Swing and MySQL.", w_tech: "Java, Java Swing, MySQL", w_img: project7_img, w_video: null, w_url: "https://github.com/heshan622/Student-Management-System" },
-    { w_no: "08", w_name: "ToDo Application", w_desc: "Desktop ToDo app built with Java Swing using file handling for task storage.", w_tech: "Java, Java Swing, .txt", w_img: project8_img, w_video: null, w_url: "https://github.com/heshan622/ToDoApp" },
-    { w_no: "09", w_name: "Login and Sign-Up System", w_desc: "Desktop login and sign-up system built with Java Swing and MySQL.", w_tech: "Java, Java Swing, MySQL", w_img: project9_img, w_video: null, w_url: "https://github.com/heshan622/LoginAndSignUpPage" },
+    { w_no: "01", w_name: "Hotel Booking Site", w_desc: "Built with React.js. Includes room listings, booking UI, login page, and admin panel layout with responsive design.", w_tech: "React, Tailwind CSS", w_img: project1_img, w_video: null, w_url: "https://hotel-booking-site-front-end.vercel.app/" },
+    { w_no: "02", w_name: "Edusity – University site", w_desc: "Single-page university site built with React.js. Features sections like Degree Programs, Gallery, About, and Contact with smooth scrolling and responsive design using Tailwind CSS.", w_tech: "React, Tailwind CSS", w_img: project2_img, w_video: null, w_url: "https://edusity-campus.vercel.app/" },
+    { w_no: "03", w_name: "Personal Portfolio", w_desc: "Frontend web app built with React and custom CSS. Focused on responsive design and interactive UI.", w_tech: "React, CSS", w_img: project3_img, w_video: null, w_url: "https://github.com/heshan622/My-Portfolio" },
+    { w_no: "04", w_name: "Coffee Shop Website", w_desc: "Responsive coffee shop website built with HTML, CSS, and JavaScript. Elegant design with smooth navigation.", w_tech: "HTML, CSS, JavaScript", w_img: project4_img, w_video: null, w_url: "https://heshan622.github.io/Coffee-Shop-Site/" },
+    { w_no: "05", w_name: "Airline Ticket Reservation System", w_desc: "Desktop app for airline ticket booking built with Java Swing and MySQL.", w_tech: "Java, Java Swing, MySQL", w_img: project5_img, w_video: null, w_url: "https://github.com/heshan622/Airline-Ticket-Booking-System" },
+    { w_no: "06", w_name: "Hotel Booking Automation", w_desc: "Automated hotel booking on PHPTRAVELS using Selenium WebDriver, TestNG, and Java.", w_tech: "Selenium, TestNG, Java, Maven", w_img: project6_img, w_video: project6_vid, w_url: "https://github.com/heshan622/HotelBooking_Selenium" },
+    { w_no: "07", w_name: "Mobile Purchase Automation", w_desc: "Automated mobile purchase workflow on eBay using Selenium WebDriver, TestNG, and Java.", w_tech: "Selenium, TestNG, Java, Maven", w_img: project7_img, w_video: project7_vid, w_url: "https://github.com/heshan622/MobilePurchaseTestNG" },
+    { w_no: "08", w_name: "Student Management System", w_desc: "Desktop app for managing student records built with Java Swing and MySQL.", w_tech: "Java, Java Swing, MySQL", w_img: project8_img, w_video: null, w_url: "https://github.com/heshan622/Student-Management-System" },
+    { w_no: "09", w_name: "ToDo Application", w_desc: "Desktop ToDo app built with Java Swing using file handling for task storage.", w_tech: "Java, Java Swing, .txt", w_img: project9_img, w_video: null, w_url: "https://github.com/heshan622/ToDoApp" },
+    { w_no: "10", w_name: "Login and Sign-Up System", w_desc: "Desktop login and sign-up system built with Java Swing and MySQL.", w_tech: "Java, Java Swing, MySQL", w_img: project10_img, w_video: null, w_url: "https://github.com/heshan622/LoginAndSignUpPage" },
 ];
 
 const Portfolio = () => {
