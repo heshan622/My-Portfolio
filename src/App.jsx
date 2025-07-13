@@ -7,6 +7,7 @@ import Portfolio from './Components/Portfolio/Portfolio';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+import Certifications from './Components/Certifications/Certifications';
 
 const App = () => {
   const [theme, setTheme] = useState('dark');
@@ -26,6 +27,7 @@ const App = () => {
       <About />
       <Skills />
       <Portfolio />
+      <Certifications />
       <Contact />
       <Footer />
       <ScrollToTop />

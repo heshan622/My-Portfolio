@@ -58,6 +58,7 @@ const Navbar = ({ theme, toggleTheme }) => {
         <li onClick={closeMenu}><a href="#about">About Me</a></li>
         <li onClick={closeMenu}><a href="#skills">Skills</a></li>
         <li onClick={closeMenu}><a href="#portfolio">Portfolio</a></li>
+        <li onClick={closeMenu}><a href="#certifications">Certifications</a></li>
         <li onClick={closeMenu}><a href="#contact">Contact</a></li>
         <div className="nav-theme-toggle-mobile" onClick={toggleTheme}>
             <p>Switch Theme</p>

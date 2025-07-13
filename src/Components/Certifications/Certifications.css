@@ -1,0 +1,115 @@
+.certifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+    margin-top: 160px;
+}
+
+.certifications-title {
+    position: relative;
+    text-align: center;
+}
+
+.certifications-title h1 {
+    padding: 0px 30px;
+    font-size: 70px;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+.certifications-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* This is the main container for the slider */
+.slider-viewport {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* Adjust the max width of the slider */
+    aspect-ratio: 16 / 9; /* Gives the slider a consistent shape */
+    background-color: #000; /* Fallback background */
+    border-radius: 10px;
+    overflow: hidden; /* This is very important */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* This creates the blurred background effect */
+.slider-bg-blur {
+    position: absolute;
+    top: -20px; /* Extend past edges to hide blur artifacts */
+    left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    background-size: cover;
+    background-position: center;
+    filter: blur(25px) brightness(0.5); /* Adjust blur and brightness */
+    z-index: 1;
+}
+
+/* This is the main, clear certificate image */
+.slider-image {
+    position: relative;
+    z-index: 2;
+    max-width: 90%; /* Ensures the image doesn't touch the edges */
+    max-height: 90%;
+    object-fit: contain; /* This is the key to the portrait effect */
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Container for the navigation buttons */
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 3;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.slider-btn {
+    width: 50px;
+    height: 50px;
+    background: transparent; /* Removed the background */
+    border-radius: 0; /* Removed the border-radius */
+    cursor: pointer;
+    transition: transform 0.3s;
+    filter: brightness(0); /* This makes the arrow icons black */
+}
+
+.slider-btn:hover {
+    transform: scale(1.1);
+}
+
+/* --- RESPONSIVE STYLES --- */
+@media (max-width: 1024px) {
+    .certifications {
+        margin: 80px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .certifications {
+        margin: 50px 30px;
+        gap: 60px;
+    }
+    .certifications-title h1 {
+        font-size: 50px;
+    }
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
