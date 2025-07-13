@@ -77,6 +77,26 @@
 
 
 /* --- MOBILE RESPONSIVE STYLES --- */
+@media(max-width: 1591px){
+    .navbar { 
+        margin: 20px 50px; 
+    }
+    .nav-menu { 
+        gap: 50px; 
+        font-size: 18px; 
+    }
+    .nav-menu li a { 
+        font-size: 20px; 
+    }
+    .nav-right { 
+        gap: 20px; 
+    }
+    .nav-connect { 
+        padding: 10px 30px; 
+        font-size: 18px; 
+    }
+
+}
 @media(max-width: 768px) {
     .navbar { 
         margin: 20px 30px; 
