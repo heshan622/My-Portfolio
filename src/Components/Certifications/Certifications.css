@@ -108,6 +108,10 @@
     .certifications-title h1 {
         font-size: 50px;
     }
+    .certifications-title img { 
+        width: 130px;
+        right: -20px;
+    }
     .slider-btn {
         width: 40px;
         height: 40px;
